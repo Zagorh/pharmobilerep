@@ -87,6 +87,7 @@ ul {
     list-style: none;
     background-color: #fafafa;
     border-bottom: 1px solid #e0e0e0;
+
 }
 
 li {
@@ -129,7 +130,7 @@ li>a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-position: -10px 0;
+    background-position: 0 0;
     background-repeat: no-repeat;
     -webkit-background-size: 10px 100%;
     -moz-background-size: 10px 100%;

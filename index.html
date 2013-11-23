@@ -64,19 +64,14 @@ function initialize() {
 		<h1>Details</h1>
 	</div>
 	<div>
-        <img class='employee-image' src='img/pill.jpg' width="260" height="194"/>
-        
+        <img class='employee-image' src='img/pill.jpg' width="260" height="194"/>        
         <h2>{{name}}</h2>
-
-        <p>{{description}}</p>
-		
-        
-        
+        <p>{{description}}</p>        
     </div>
 </script>
 <script id="employee-li-tpl" type="text/x-handlebars-template">
     {{#.}}
-    <li data-id="{{this.id}}"><a href='#'>{{this.name}}</a></li>
+    <li data-id="{{this.id}}">{{this.name}}</li>
     {{/.}}
 </script>
 <script id="product-details-tlp" type="text/x-handlebars-template">
