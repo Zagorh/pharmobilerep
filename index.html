@@ -2,13 +2,40 @@
 <head>
 <script src="css/source-sans-pro.js"></script>
 <link href="css/styles.css" rel="stylesheet">
+<style>
+  #map_canvas {
+    width: 500px;
+    height: 400px;
+  }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+function initialize() {
+    var map_canvas = document.getElementById('map_canvas');
+	var latLng = new google.maps.LatLng(44.5403, -78.5463);
+    var map_options = {
+          center: new google.maps.LatLng(latLng),
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+		var marker = new google.maps.Marker({
+			position: latLng,
+			map: map,
+			title: 'AQUI'
+		});  
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 </head>
 <body>
 
 <script id="home-tpl" type="text/x-handlebars-template">
-    <div class='header'><h1>Home</h1></div>
+    <div class='header'><h1>Home</h1></div>	
     <div class='search-bar'><input class='search-key' type="search"/></div>
     <div class="scroll"><ul class='employee-list'></ul></div>
+	<div id="map_canvas" style="z-index:-1"></div>
 </script>
 <script id="employee-tpl" type="text/x-handlebars-template">
 	<div class="header">
@@ -40,5 +67,6 @@
 <script src="js/HomeView.js"></script>
 <script src="js/EmployeeView.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>
