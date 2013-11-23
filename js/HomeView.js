@@ -10,8 +10,8 @@ var HomeView = function(store){
 	};
 	
 	this.findByName = function(){
-		store.findByName($('.search-key').val(), function(employees) {
-			$('.employee-list').html(HomeView.litemplate(employees));
+		store.findByName($('.search-key').val(), function(products) {
+			$('.employee-list').html(HomeView.litemplate(products));
 		});
 	};
 	this.initialize();
