@@ -66,13 +66,11 @@ function initialize() {
 	<div style="background-color:#DDDADD">
         <img class='employee-image' src='img/pill.jpg' width="360" height="194"/>
         
-        <h2 style="color:#484848 ">Nome:    </h2>
+        <h2 style="color:#484848">Nome:    </h2>
 <span style="margin-left:80px">{{name}}</span>
 <hr>
-<p style="color:#484848 ">Descrição:</p>
-	<span style="margin-left:200px">{{description}}</span>       
-
-
+<p style="color:#484848">Descrição:</p>
+	<span style="margin-left:200px">{{description}}</span>   
     </div>
 </script>
 <script id="employee-li-tpl" type="text/x-handlebars-template">
@@ -81,10 +79,14 @@ function initialize() {
     {{/.}}
 </script>
 <script id="product-details-tlp" type="text/x-handlebars-template">
-	<div id="prodDetails" class='details'>
-        <img class='employee-image' src='img/pill.jpg' />
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
+	<div style="background-color:#DDDADD">
+        <img class='employee-image' src='img/pill.jpg' style="max-height: 200px; max-width: 200px;" />
+       
+        <h2 style="color:#484848">Nome:    </h2>
+<span style="margin-left:80px">{{name}}</span>
+<hr>
+<p style="color:#484848">Descrição:</p>
+	<span style="margin-left:80px">{{description}}</span>   
     </div>
 </script>
 <script src="phonegap.js"></script>
