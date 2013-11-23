@@ -61,12 +61,18 @@ function initialize() {
 <script id="employee-tpl" type="text/x-handlebars-template">
 	<div class="header">
 		<a href='#' class="button header-button header-button-left">Back</a>
-		<h1>Details</h1>
+		<h1>Detalhes</h1>
 	</div>
-	<div>
-        <img class='employee-image' src='img/pill.jpg' width="260" height="194"/>        
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>        
+
+	<div style="background-color:#DDDADD">
+        <img class='employee-image' src='img/pill.jpg' width="360" height="194"/>
+        
+        <h2 style="color:#484848 ">Nome:    </h2>
+<span style="margin-left:80px">{{name}}</span>
+<hr>
+<p style="color:#484848 ">Descrição:</p>
+	<span style="margin-left:200px">{{description}}</span>
+
     </div>
 </script>
 <script id="employee-li-tpl" type="text/x-handlebars-template">
