@@ -10,7 +10,6 @@ var MemoryStore = function(successCallback, errorCallback) {
 
     this.findById = function(id, callback) {
         var products = this.products;
-        var products = null;
         var l = products.length;
         for (var i=0; i < l; i++) {
             if (products[i].id === id) {
